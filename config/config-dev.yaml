@@ -1,0 +1,14 @@
+# 服务
+server:
+  port: 8081
+
+# 数据库
+datasource:
+  driverName: mysql
+  host: 1.15.189.106
+  port: 3306
+  database: library
+  username: root
+  password: Root123.
+  charset: utf8
+  loc: Asia/Shanghai
