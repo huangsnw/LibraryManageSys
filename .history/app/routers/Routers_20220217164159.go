@@ -13,7 +13,7 @@ func CollectRouter(engine *gin.Engine) *gin.Engine {
 	// 用户
 	userGroup := engine.Group("/user")
 	// 新增用户
-	userGroup.POST("/save", controllers.SaveUser)
+	userGroup.POST("/save")
 	// 查询用户
 	userGroup.GET("/select")
 	// 删除用户
