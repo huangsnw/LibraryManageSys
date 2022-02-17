@@ -7,7 +7,7 @@ type BookDao struct {
 	Id string
 
 	// 书名
-	Book string
+	BookName string
 
 	// 作者
 	Author string
@@ -38,4 +38,10 @@ type BookDao struct {
 
 	// 更新时间
 	UpdateTime time.Time
+
+	// 创建者
+	CreateBy string
+
+	// 更新者
+	UpdateBy string
 }

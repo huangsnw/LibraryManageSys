@@ -26,4 +26,10 @@ type UserDao struct {
 
 	// 更新时间
 	UpdateTime time.Time
+
+	// 创建者
+	CreateBy string
+
+	// 更新者
+	UpdateBy string
 }
