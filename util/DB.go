@@ -2,16 +2,17 @@ package util
 
 import (
 	"fmt"
+	"log"
+	"net/url"
+
 	"github.com/spf13/viper"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
-	"log"
-	"net/url"
 )
 
 var DB *gorm.DB
 
-func Init() {
+func InitDB() {
 	// driverName := viper.GetString("datasource.driverName")
 	host := viper.GetString("datasource.host")
 	print(host)

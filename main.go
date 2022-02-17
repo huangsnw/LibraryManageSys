@@ -3,6 +3,7 @@ package main
 import (
 	"LibraryManageSys/app/routers"
 	"LibraryManageSys/util"
+	"fmt"
 	"log"
 
 	"github.com/gin-gonic/gin"
@@ -11,6 +12,9 @@ import (
 func main() {
 	// 读取配置文件
 	util.ConfigViper()
+	// 初始化数据库
+	db := util.InitDB
+	fmt.Println(db)
 	// 开启gin
 	engine := gin.Default()
 	// 路由
