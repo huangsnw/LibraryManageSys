@@ -15,11 +15,11 @@ func CollectRouter(engine *gin.Engine) *gin.Engine {
 	// 新增用户
 	userGroup.POST("/save", controllers.SaveUser)
 	// 查询用户
-	userGroup.GET("/select")
+	userGroup.GET("/select", controllers.SelectUser)
 	// 删除用户
-	userGroup.DELETE("/del")
+	userGroup.DELETE("/del", controllers.DeleteUser)
 	// 修改用户
-	userGroup.PUT("/update")
+	userGroup.PUT("/update", controllers.UpdateUser)
 
 	// 图书
 	bookGroup := engine.Group("/book")

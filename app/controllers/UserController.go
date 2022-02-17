@@ -50,7 +50,7 @@ func DeleteUser(ctx *gin.Context) {
 }
 
 // 查询用户
-func SelectUserk(ctx *gin.Context) {
+func SelectUser(ctx *gin.Context) {
 	var user dao.User
 	userId := ctx.Query("id")
 	util.DB = util.DB.Take(&user, "id = ?", userId)
