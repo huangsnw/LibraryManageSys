@@ -1,10 +1,20 @@
+/*
+ * @title: 这里写标题
+ * @Date: 2022-02-15 17:17:38
+ * @version: 1.0
+ * @author: huang sn
+ * @description: 这里写描述信息
+ * @FilePath: /LibraryManageSys/main.go
+ */
 package main
 
 import (
 	"LibraryManageSys/app/routers"
 	"LibraryManageSys/storage/logs"
 	"LibraryManageSys/util"
+	"fmt"
 	"log"
+	"time"
 
 	"github.com/gin-gonic/gin"
 	"github.com/spf13/viper"
@@ -17,13 +27,38 @@ func main() {
 	logs.InitLog()
 	// 初始化数据库
 	util.InitDB()
+	// 初始化Redis
+	util.InitDB()
 	// 开启gin
 	engine := gin.Default()
+	// 拦截器
+	engine.Use(TokenHandle)
 	// 路由
 	engine = routers.CollectRouter(engine)
+	fmt.Println("---------------------------")
+	fmt.Println("http://" + viper.GetString("server.host") + ":" + viper.GetString("server.port") + "/swagger/index.html")
+	fmt.Println("---------------------------")
 	// 运行gin
 	err := engine.Run(":" + viper.GetString("server.port"))
 	if err != nil {
 		log.Fatalf("Gin 框架出错")
+	}
+}
+
+func TokenHandle(ctx *gin.Context) {
+	tokenString := ctx.Request.Header.Get("X-Token")
+	_, err := util.ParseToken(tokenString)
+	log.Println(ctx.FullPath())
+	if err != nil && ctx.FullPath() != "/token/get" {
+		ctx.JSON(500, gin.H{
+			"code":      500,
+			"message":   "鉴权失败",
+			"timestamp": time.Now(),
+		})
+		ctx.Abort()
+		log.Print("Token 鉴权失败")
+		return
+	} else {
+		ctx.Next()
 	}
 }

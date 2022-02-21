@@ -1,24 +1,30 @@
+/*
+ * @title: 这里写标题
+ * @Date: 2022-02-17 20:03:35
+ * @version: 1.0
+ * @author: huang sn
+ * @description: 这里写描述信息
+ * @FilePath: /LibraryManageSys/app/controllers/UserController.go
+ */
 package controllers
 
 import (
 	"LibraryManageSys/dao"
+	"LibraryManageSys/models"
 	"LibraryManageSys/util"
+	"net/http"
 	"time"
 
 	"github.com/gin-gonic/gin"
 )
 
-// GetPostListHandler2 升级版帖子列表接口
-// @Summary 保存用户
-// @Description 保存用户
-// @Tags User
-// @Accept application/json
-// @Produce application/json
-// @Param Authorization header string false "Bearer 用户令牌"
-// @Param object query models.ParamPostList false "查询参数"
-// @Security ApiKeyAuth
-// @Success 200 {object} _ResponsePostList
-// @Router /save [get]
+/**
+ * @description:
+ * @Accept:
+ * @param {*gin.Context} ctx
+ * @return {*}
+ * @Router:
+ */
 func SaveUser(ctx *gin.Context) {
 	var user dao.User
 	ctx.BindJSON(&user)
@@ -39,17 +45,13 @@ func SaveUser(ctx *gin.Context) {
 	}
 }
 
-// GetPostListHandler2 升级版帖子列表接口
-// @Summary 升级版帖子列表接口
-// @Description 可按社区按时间或分数排序查询帖子列表接口
-// @Tags 帖子相关接口
-// @Accept application/json
-// @Produce application/json
-// @Param Authorization header string false "Bearer 用户令牌"
-// @Param object query models.ParamPostList false "查询参数"
-// @Security ApiKeyAuth
-// @Success 200 {object} _ResponsePostList
-// @Router /posts2 [get]
+/**
+ * @description:
+ * @Accept:
+ * @param {*gin.Context} ctx
+ * @return {*}
+ * @Router:
+ */
 func DeleteUser(ctx *gin.Context) {
 	var user dao.User
 	userId := ctx.Query("id")
@@ -69,17 +71,13 @@ func DeleteUser(ctx *gin.Context) {
 	}
 }
 
-// GetPostListHandler2 升级版帖子列表接口
-// @Summary 升级版帖子列表接口
-// @Description 可按社区按时间或分数排序查询帖子列表接口
-// @Tags 帖子相关接口
-// @Accept application/json
-// @Produce application/json
-// @Param Authorization header string false "Bearer 用户令牌"
-// @Param object query models.ParamPostList false "查询参数"
-// @Security ApiKeyAuth
-// @Success 200 {object} _ResponsePostList
-// @Router /posts2 [get]
+/**
+ * @description:
+ * @Accept:
+ * @param {*gin.Context} ctx
+ * @return {*}
+ * @Router:
+ */
 func SelectUser(ctx *gin.Context) {
 	var user dao.User
 	userId := ctx.Query("id")
@@ -99,17 +97,13 @@ func SelectUser(ctx *gin.Context) {
 	}
 }
 
-// GetPostListHandler2 升级版帖子列表接口
-// @Summary 升级版帖子列表接口
-// @Description 可按社区按时间或分数排序查询帖子列表接口
-// @Tags 帖子相关接口
-// @Accept application/json
-// @Produce application/json
-// @Param Authorization header string false "Bearer 用户令牌"
-// @Param object query models.ParamPostList false "查询参数"
-// @Security ApiKeyAuth
-// @Success 200 {object} _ResponsePostList
-// @Router /posts2 [get]
+/**
+ * @description:
+ * @Accept:
+ * @param {*}
+ * @return {*}
+ * @Router:
+ */
 func UpdateUser(ctx *gin.Context) {
 	var user dao.User
 	ctx.BindJSON(&user)
@@ -126,5 +120,55 @@ func UpdateUser(ctx *gin.Context) {
 			"timestamp": time.Now(),
 			"data":      nil,
 		})
+	}
+}
+
+/**
+ * @description:
+ * @Accept:
+ * @param {*gin.Context} ctx
+ * @return {*}
+ * @Router:
+ */
+func ExportUser(ctx *gin.Context) {
+	var user dao.User
+	util.DB = util.DB.Find(&user)
+}
+
+/**
+ * @description:
+ * @Accept:
+ * @param {*gin.Context} ctx
+ * @return {*}
+ * @Router:
+ */
+func SelectUserByPage(ctx *gin.Context) {
+
+}
+
+/**
+ * @description:
+ * @Accept:
+ * @param {*gin.Context} ctx
+ * @return {*}
+ * @Router:
+ */
+func GetToken(ctx *gin.Context) {
+	name := ctx.Query("username")
+	password := ctx.Query("password")
+	if name == "admin" && password == "123" {
+		result := models.Result{
+			Code:    200,
+			Message: util.GetToken(name),
+			Data:    time.Now(),
+		}
+		ctx.JSON(http.StatusOK, result)
+	} else {
+		result := models.Result{
+			Code:    500,
+			Message: "登录失败",
+			Data:    time.Now(),
+		}
+		ctx.JSON(500, result)
 	}
 }

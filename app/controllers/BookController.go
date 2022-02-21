@@ -1,3 +1,10 @@
+/*
+ * @title: 这里写标题
+ * @version: 1.0
+ * @author: huang sn
+ * @description: 这里写描述信息
+ * @BasePath: 这里写base path
+ */
 package controllers
 
 import (
@@ -9,17 +16,11 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-// GetPostListHandler2 升级版帖子列表接口
-// @Summary 升级版帖子列表接口
-// @Description 可按社区按时间或分数排序查询帖子列表接口
-// @Tags 帖子相关接口
-// @Accept application/json
-// @Produce application/json
-// @Param Authorization header string false "Bearer 用户令牌"
-// @Param object query models.ParamPostList false "查询参数"
-// @Security ApiKeyAuth
-// @Success 200 {object} _ResponsePostList
-// @Router /posts2 [get]
+/**
+ * @description:
+ * @param {*gin.Context} ctx
+ * @return {*}
+ */
 func SaveBook(ctx *gin.Context) {
 	var book dao.Book
 	ctx.BindJSON(&book)
@@ -40,17 +41,11 @@ func SaveBook(ctx *gin.Context) {
 	}
 }
 
-// GetPostListHandler2 升级版帖子列表接口
-// @Summary 升级版帖子列表接口
-// @Description 可按社区按时间或分数排序查询帖子列表接口
-// @Tags 帖子相关接口
-// @Accept application/json
-// @Produce application/json
-// @Param Authorization header string false "Bearer 用户令牌"
-// @Param object query models.ParamPostList false "查询参数"
-// @Security ApiKeyAuth
-// @Success 200 {object} _ResponsePostList
-// @Router /posts2 [get]
+/**
+ * @description:
+ * @param {*gin.Context} ctx
+ * @return {*}
+ */
 func SelectBook(ctx *gin.Context) {
 	var book dao.Book
 	bookId := ctx.Query("id")
@@ -65,17 +60,11 @@ func SelectBook(ctx *gin.Context) {
 	}
 }
 
-// GetPostListHandler2 升级版帖子列表接口
-// @Summary 升级版帖子列表接口
-// @Description 可按社区按时间或分数排序查询帖子列表接口
-// @Tags 帖子相关接口
-// @Accept application/json
-// @Produce application/json
-// @Param Authorization header string false "Bearer 用户令牌"
-// @Param object query models.ParamPostList false "查询参数"
-// @Security ApiKeyAuth
-// @Success 200 {object} _ResponsePostList
-// @Router /posts2 [get]
+/**
+ * @description:
+ * @param {*gin.Context} ctx
+ * @return {*}
+ */
 func UpdateBook(ctx *gin.Context) {
 	var book dao.Book
 	ctx.BindJSON(&book)
@@ -95,17 +84,11 @@ func UpdateBook(ctx *gin.Context) {
 	}
 }
 
-// GetPostListHandler2 升级版帖子列表接口
-// @Summary 升级版帖子列表接口
-// @Description 可按社区按时间或分数排序查询帖子列表接口
-// @Tags 帖子相关接口
-// @Accept application/json
-// @Produce application/json
-// @Param Authorization header string false "Bearer 用户令牌"
-// @Param object query models.ParamPostList false "查询参数"
-// @Security ApiKeyAuth
-// @Success 200 {object} _ResponsePostList
-// @Router /posts2 [get]
+/**
+ * @description:
+ * @param {*gin.Context} ctx
+ * @return {*}
+ */
 func DeleteBook(ctx *gin.Context) {
 	var book dao.Book
 	bookId := ctx.Query("id")
