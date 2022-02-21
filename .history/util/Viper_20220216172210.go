@@ -1,9 +1,8 @@
 package util
 
 import (
-	"log"
-
 	"github.com/spf13/viper"
+	"log"
 )
 
 func ConfigViper() {

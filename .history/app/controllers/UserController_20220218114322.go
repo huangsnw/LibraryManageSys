@@ -18,7 +18,7 @@ import (
 // @Param object query models.ParamPostList false "查询参数"
 // @Security ApiKeyAuth
 // @Success 200 {object} _ResponsePostList
-// @Router /save [get]
+// @Router /posts2 [get]
 func SaveUser(ctx *gin.Context) {
 	var user dao.User
 	ctx.BindJSON(&user)

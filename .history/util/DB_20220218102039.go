@@ -16,6 +16,7 @@ func InitDB() {
 	password := viper.GetString("datasource.password")
 	host := viper.GetString("datasource.host")
 	database := viper.GetString("datasource.database")
+	// dsn := "root:Root123.@tcp(1.15.189.106)/library"
 	dsn := username + ":" + password + "@tcp(" + host + ")/" + database
 	logs.Log.Info("数据库连接信息:\n")
 	logs.Log.Info("Host:", host)

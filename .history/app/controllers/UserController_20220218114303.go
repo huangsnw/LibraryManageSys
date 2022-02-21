@@ -11,14 +11,14 @@ import (
 // GetPostListHandler2 升级版帖子列表接口
 // @Summary 保存用户
 // @Description 保存用户
-// @Tags User
+// @Tags 帖子相关接口
 // @Accept application/json
 // @Produce application/json
 // @Param Authorization header string false "Bearer 用户令牌"
 // @Param object query models.ParamPostList false "查询参数"
 // @Security ApiKeyAuth
 // @Success 200 {object} _ResponsePostList
-// @Router /save [get]
+// @Router /posts2 [get]
 func SaveUser(ctx *gin.Context) {
 	var user dao.User
 	ctx.BindJSON(&user)

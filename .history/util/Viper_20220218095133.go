@@ -14,4 +14,7 @@ func ConfigViper() {
 	if err != nil {
 		log.Fatalf("Viper解析出错")
 	}
+
+	viper.Set("tom", "cat")
+
 }

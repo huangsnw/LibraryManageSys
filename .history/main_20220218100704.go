@@ -2,7 +2,6 @@ package main
 
 import (
 	"LibraryManageSys/app/routers"
-	"LibraryManageSys/storage/logs"
 	"LibraryManageSys/util"
 	"log"
 
@@ -14,7 +13,6 @@ func main() {
 	// 读取配置文件
 	util.ConfigViper()
 	// 读取日志配置
-	logs.InitLog()
 	// 初始化数据库
 	util.InitDB()
 	// 开启gin
