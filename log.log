@@ -1,0 +1,5 @@
+[系统日志]2022/03/07 10:17:24.033795 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:34: Database Connect Sucess
+[系统日志]2022/03/07 10:17:24.187325 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:31: Redis Connect Sucess
+[系统日志]2022/03/07 10:17:24.188106 /Users/huangsn/Projects/golang/LibraryManageSys/main.go:45: Gin 框架出错
+[系统日志]2022/03/07 10:17:49.201947 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:34: Database Connect Sucess
+[系统日志]2022/03/07 10:17:49.365693 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:31: Redis Connect Sucess

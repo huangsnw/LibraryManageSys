@@ -3,7 +3,7 @@
     "configurations": [
         {
             // 调试界面下拉选择项的名称
-            "name": "go",
+            "name": "Go Run",
             // 设置为go无需改动，是 vs code 用于计算调试代码需要用哪个扩展
             "type": "go",
             // 

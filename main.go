@@ -9,9 +9,10 @@
 package main
 
 import (
-	"LibraryManageSys/app/routers"
-	"LibraryManageSys/storage/logs"
-	"LibraryManageSys/util"
+	"LibraryManageSys/pkg/logs"
+	"LibraryManageSys/pkg/setting"
+	"LibraryManageSys/pkg/util"
+	"LibraryManageSys/routers"
 	"fmt"
 	"log"
 	"time"
@@ -22,13 +23,13 @@ import (
 
 func main() {
 	// 读取配置文件
-	util.ConfigViper()
+	setting.ConfigViper()
 	// 读取日志配置
 	logs.InitLog()
 	// 初始化数据库
 	util.InitDB()
 	// 初始化Redis
-	util.InitDB()
+	util.InitRedis()
 	// 开启gin
 	engine := gin.Default()
 	// 拦截器
@@ -45,11 +46,17 @@ func main() {
 	}
 }
 
+/**
+ * @description:
+ * @Accept:
+ * @param {*gin.Context} ctx
+ * @return {*}
+ * @Router:
+ */
 func TokenHandle(ctx *gin.Context) {
 	tokenString := ctx.Request.Header.Get("X-Token")
 	_, err := util.ParseToken(tokenString)
-	log.Println(ctx.FullPath())
-	if err != nil && ctx.FullPath() != "/token/get" {
+	if err != nil && ctx.FullPath() != "/token/get" && ctx.FullPath() != "/swagger/*any" {
 		ctx.JSON(500, gin.H{
 			"code":      500,
 			"message":   "鉴权失败",
