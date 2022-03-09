@@ -1,11 +1,3 @@
-/*
- * @title: 这里写标题
- * @Date: 2022-02-15 17:17:38
- * @version: 1.0
- * @author: huang sn
- * @description: 这里写描述信息
- * @FilePath: /LibraryManageSys/main.go
- */
 package main
 
 import (
@@ -14,6 +6,7 @@ import (
 	"LibraryManageSys/pkg/setting"
 	"LibraryManageSys/pkg/util"
 	"LibraryManageSys/routers"
+	"LibraryManageSys/task"
 	"fmt"
 	"log"
 
@@ -30,6 +23,8 @@ func main() {
 	util.InitDB()
 	// 初始化Redis
 	util.InitRedis()
+	// 定时任务
+	task.PrintTime()
 	// 开启gin
 	engine := gin.Default()
 	// 拦截器
