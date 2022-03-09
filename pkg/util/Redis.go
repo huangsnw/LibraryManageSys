@@ -1,11 +1,3 @@
-/*
- * @title: Redis 配置文件
- * @Date: 2022-02-21 10:30:02
- * @version: 1.0
- * @author: huang sn
- * @description: 这里写描述信息
- * @FilePath: /LibraryManageSys/util/Redis.go
- */
 package util
 
 import (
@@ -34,14 +26,6 @@ func InitRedis() {
 	}
 }
 
-/**
- * @description: 写入Redis
- * @Accept:
- * @param {string} key
- * @param {string} value
- * @return {*}
- * @Router:
- */
 func Set(key string, value string) {
 	err := Redis.Set(context.Background(), key, value, 0).Err()
 	if err != nil {

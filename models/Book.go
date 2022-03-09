@@ -13,6 +13,7 @@ type Book struct {
 	Classification string    `json:"classification" gorm:"type:varchar(32)"`
 	Floor          int8      `json:"floor" gorm:"type:int(11)"`
 	Bookshelf      int8      `json:"bookshelf" gorm:"type:int(11)"`
-	DateOfPurchase time.Time `json:"date_of_purchase" gorm:"type:date"`
+	DateOfPurchase time.Time `json:"date_of_purchase" gorm:"type:date;default:null"`
 	Remarks        string    `json:"remarks" gorm:"type:varchar(32)"`
+	Picture        string    `json:"picture" gorm:"column:picture;type:varchar(255)"`
 }

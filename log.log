@@ -3,3 +3,141 @@
 [系统日志]2022/03/07 10:17:24.188106 /Users/huangsn/Projects/golang/LibraryManageSys/main.go:45: Gin 框架出错
 [系统日志]2022/03/07 10:17:49.201947 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:34: Database Connect Sucess
 [系统日志]2022/03/07 10:17:49.365693 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:31: Redis Connect Sucess
+[系统日志]2022/03/07 15:33:24.549518 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:34: Database Connect Sucess
+[系统日志]2022/03/07 15:33:24.625602 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:31: Redis Connect Sucess
+[系统日志]2022/03/07 15:35:18.140838 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:34: Database Connect Sucess
+[系统日志]2022/03/07 15:35:18.280534 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:31: Redis Connect Sucess
+[系统日志]2022/03/07 15:36:10.530808 /Users/huangsn/Projects/golang/LibraryManageSys/main.go:66: Token 鉴权失败
+[系统日志]2022/03/07 15:37:37.245610 /Users/huangsn/Projects/golang/LibraryManageSys/main.go:66: Token 鉴权失败
+[系统日志]2022/03/07 20:31:25.394558 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:34: Database Connect Sucess
+[系统日志]2022/03/07 20:31:25.484370 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:31: Redis Connect Sucess
+[系统日志]2022/03/07 20:44:35.633221 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:34: Database Connect Sucess
+[系统日志]2022/03/07 20:44:35.711867 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:31: Redis Connect Sucess
+[系统日志]2022/03/07 20:47:30.277291 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:34: Database Connect Sucess
+[系统日志]2022/03/07 20:47:30.589057 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:31: Redis Connect Sucess
+[系统日志]2022/03/07 20:48:44.455942 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:34: Database Connect Sucess
+[系统日志]2022/03/07 20:48:44.574274 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:31: Redis Connect Sucess
+[系统日志]2022/03/08 10:17:20.923345 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:27: Database Connect Sucess
+[系统日志]2022/03/08 10:17:21.028746 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:31: Redis Connect Sucess
+[系统日志]2022/03/08 10:18:48.755683 /Users/huangsn/Projects/golang/LibraryManageSys/middleware/BookController.go:112: 分页查询出错
+[系统日志]2022/03/08 10:19:38.344510 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:27: Database Connect Sucess
+[系统日志]2022/03/08 10:19:38.464411 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:31: Redis Connect Sucess
+[系统日志]2022/03/08 10:19:48.091778 /Users/huangsn/Projects/golang/LibraryManageSys/middleware/BookController.go:112: 分页查询出错
+[系统日志]2022/03/08 10:20:19.234515 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:27: Database Connect Sucess
+[系统日志]2022/03/08 10:20:19.515602 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:31: Redis Connect Sucess
+[系统日志]2022/03/08 10:20:22.919728 /Users/huangsn/Projects/golang/LibraryManageSys/middleware/BookController.go:112: 分页查询出错
+[系统日志]2022/03/08 10:25:16.650692 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:27: Database Connect Sucess
+[系统日志]2022/03/08 10:25:16.726313 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:31: Redis Connect Sucess
+[系统日志]2022/03/08 10:25:24.699081 /Users/huangsn/Projects/golang/LibraryManageSys/middleware/BookController.go:111: PageSize: 10
+[系统日志]2022/03/08 10:25:26.618316 /Users/huangsn/Projects/golang/LibraryManageSys/middleware/BookController.go:111: PageSize: 10
+[系统日志]2022/03/08 10:25:57.136327 /Users/huangsn/Projects/golang/LibraryManageSys/middleware/BookController.go:111: PageSize: 10
+[系统日志]2022/03/08 10:29:29.327329 /Users/huangsn/Projects/golang/LibraryManageSys/middleware/BookController.go:111: PageSize: 10
+[系统日志]2022/03/08 10:30:13.811010 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:27: Database Connect Sucess
+[系统日志]2022/03/08 10:30:13.894056 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:31: Redis Connect Sucess
+[系统日志]2022/03/08 10:30:20.802438 /Users/huangsn/Projects/golang/LibraryManageSys/middleware/BookController.go:111: PageSize: 10
+[系统日志]2022/03/08 10:30:20.802544 /Users/huangsn/Projects/golang/LibraryManageSys/middleware/BookController.go:113: PageNumber: 1
+[系统日志]2022/03/08 10:30:20.820350 /Users/huangsn/Projects/golang/LibraryManageSys/middleware/BookController.go:116: PageSum: 6
+[系统日志]2022/03/08 10:30:20.835234 /Users/huangsn/Projects/golang/LibraryManageSys/middleware/BookController.go:122: 分页查询出错
+[系统日志]2022/03/08 10:43:57.119438 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:27: Database Connect Sucess
+[系统日志]2022/03/08 10:43:57.335765 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:31: Redis Connect Sucess
+[系统日志]2022/03/08 10:44:12.777964 /Users/huangsn/Projects/golang/LibraryManageSys/middleware/BookController.go:111: PageSize: 10
+[系统日志]2022/03/08 10:44:13.653396 /Users/huangsn/Projects/golang/LibraryManageSys/middleware/BookController.go:115: PageSum: 6
+[系统日志]2022/03/08 10:44:13.653474 /Users/huangsn/Projects/golang/LibraryManageSys/middleware/BookController.go:116: PageNumber: 1
+[系统日志]2022/03/08 10:44:13.683929 /Users/huangsn/Projects/golang/LibraryManageSys/middleware/BookController.go:122: 分页查询出错
+[系统日志]2022/03/08 10:53:18.035435 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:27: Database Connect Sucess
+[系统日志]2022/03/08 10:53:18.162397 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:31: Redis Connect Sucess
+[系统日志]2022/03/08 10:53:30.569543 /Users/huangsn/Projects/golang/LibraryManageSys/middleware/BookController.go:111: PageSize: 10
+[系统日志]2022/03/08 10:53:30.597125 /Users/huangsn/Projects/golang/LibraryManageSys/middleware/BookController.go:115: PageSum: 6
+[系统日志]2022/03/08 10:53:30.597191 /Users/huangsn/Projects/golang/LibraryManageSys/middleware/BookController.go:116: PageNumber: 1
+[系统日志]2022/03/08 10:53:30.626494 /Users/huangsn/Projects/golang/LibraryManageSys/middleware/BookController.go:125: 分页查询出错
+[系统日志]2022/03/08 10:56:37.099630 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:27: Database Connect Sucess
+[系统日志]2022/03/08 10:56:37.179052 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:31: Redis Connect Sucess
+[系统日志]2022/03/08 10:56:49.503629 /Users/huangsn/Projects/golang/LibraryManageSys/middleware/BookController.go:111: PageSize: 10
+[系统日志]2022/03/08 10:56:49.527303 /Users/huangsn/Projects/golang/LibraryManageSys/middleware/BookController.go:115: PageSum: 6
+[系统日志]2022/03/08 10:56:49.527385 /Users/huangsn/Projects/golang/LibraryManageSys/middleware/BookController.go:116: PageNumber: 1
+[系统日志]2022/03/08 10:57:21.940909 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:27: Database Connect Sucess
+[系统日志]2022/03/08 10:57:22.033930 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:31: Redis Connect Sucess
+[系统日志]2022/03/08 10:57:29.354709 /Users/huangsn/Projects/golang/LibraryManageSys/middleware/BookController.go:111: PageSize: 10
+[系统日志]2022/03/08 10:57:29.378595 /Users/huangsn/Projects/golang/LibraryManageSys/middleware/BookController.go:115: PageSum: 6
+[系统日志]2022/03/08 10:57:29.378693 /Users/huangsn/Projects/golang/LibraryManageSys/middleware/BookController.go:116: PageNumber: 1
+[系统日志]2022/03/08 10:57:29.398597 /Users/huangsn/Projects/golang/LibraryManageSys/middleware/BookController.go:128: 111
+[系统日志]2022/03/08 11:03:14.352274 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:27: Database Connect Sucess
+[系统日志]2022/03/08 11:03:14.429910 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:31: Redis Connect Sucess
+[系统日志]2022/03/08 11:03:18.246323 /Users/huangsn/Projects/golang/LibraryManageSys/middleware/BookController.go:111: PageSize: 10
+[系统日志]2022/03/08 11:26:39.475628 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:27: Database Connect Sucess
+[系统日志]2022/03/08 11:26:39.621599 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:31: Redis Connect Sucess
+[系统日志]2022/03/08 11:28:51.089475 /Users/huangsn/Projects/golang/LibraryManageSys/middleware/BookController.go:111: PageSize: 10
+[系统日志]2022/03/08 11:34:39.319788 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:27: Database Connect Sucess
+[系统日志]2022/03/08 11:34:39.412653 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:31: Redis Connect Sucess
+[系统日志]2022/03/08 11:34:45.315500 /Users/huangsn/Projects/golang/LibraryManageSys/middleware/BookController.go:111: PageSize: 10
+[系统日志]2022/03/08 11:36:34.785625 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:27: Database Connect Sucess
+[系统日志]2022/03/08 11:36:35.123431 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:31: Redis Connect Sucess
+[系统日志]2022/03/08 11:36:39.936477 /Users/huangsn/Projects/golang/LibraryManageSys/middleware/BookController.go:111: PageSize: 10
+[系统日志]2022/03/08 11:38:38.686923 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:27: Database Connect Sucess
+[系统日志]2022/03/08 11:38:38.937009 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:31: Redis Connect Sucess
+[系统日志]2022/03/08 11:55:03.038533 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:19: Database Connect Sucess
+[系统日志]2022/03/08 11:55:03.117987 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:23: Redis Connect Sucess
+[系统日志]2022/03/08 13:41:47.023169 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:19: Database Connect Sucess
+[系统日志]2022/03/08 13:41:47.094040 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:23: Redis Connect Sucess
+[系统日志]2022/03/08 13:44:39.448222 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:19: Database Connect Sucess
+[系统日志]2022/03/08 13:44:39.530352 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:23: Redis Connect Sucess
+[系统日志]2022/03/08 13:45:51.769672 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:19: Database Connect Sucess
+[系统日志]2022/03/08 13:45:51.844633 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:23: Redis Connect Sucess
+[系统日志]2022/03/08 14:04:38.891485 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:19: Database Connect Sucess
+[系统日志]2022/03/08 14:04:38.993569 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:23: Redis Connect Sucess
+[系统日志]2022/03/08 14:05:27.932983 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:19: Database Connect Sucess
+[系统日志]2022/03/08 14:05:28.012279 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:23: Redis Connect Sucess
+[系统日志]2022/03/08 14:06:23.396423 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:19: Database Connect Sucess
+[系统日志]2022/03/08 14:06:23.463841 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:23: Redis Connect Sucess
+[系统日志]2022/03/08 14:14:14.383126 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:19: Database Connect Sucess
+[系统日志]2022/03/08 14:14:14.466191 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:23: Redis Connect Sucess
+[系统日志]2022/03/08 14:14:21.128399 /Users/huangsn/Projects/golang/LibraryManageSys/middleware/UserController.go:104: 日志1
+[系统日志]2022/03/08 14:20:08.140325 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:19: Database Connect Sucess
+[系统日志]2022/03/08 14:20:08.237813 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:23: Redis Connect Sucess
+[系统日志]2022/03/08 14:27:25.344052 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:19: Database Connect Sucess
+[系统日志]2022/03/08 14:27:25.418304 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:23: Redis Connect Sucess
+[系统日志]2022/03/08 14:29:07.676762 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:19: Database Connect Sucess
+[系统日志]2022/03/08 14:29:07.758742 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:23: Redis Connect Sucess
+[系统日志]2022/03/08 14:39:37.788280 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:19: Database Connect Sucess
+[系统日志]2022/03/08 14:39:37.871193 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:23: Redis Connect Sucess
+[系统日志]2022/03/08 14:48:57.383097 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:19: Database Connect Sucess
+[系统日志]2022/03/08 14:48:57.463360 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:23: Redis Connect Sucess
+[系统日志]2022/03/09 09:15:51.534789 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:19: Database Connect Sucess
+[系统日志]2022/03/09 09:15:51.698282 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:23: Redis Connect Sucess
+[系统日志]2022/03/09 09:16:31.712915 /Users/huangsn/Projects/golang/LibraryManageSys/main.go:64: Token 鉴权失败
+[系统日志]2022/03/09 09:19:19.064694 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:19: Database Connect Sucess
+[系统日志]2022/03/09 09:19:19.307215 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:23: Redis Connect Sucess
+[系统日志]2022/03/09 09:25:08.530584 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:19: Database Connect Sucess
+[系统日志]2022/03/09 09:25:08.956717 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:23: Redis Connect Sucess
+[系统日志]2022/03/09 09:26:26.223381 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:19: Database Connect Sucess
+[系统日志]2022/03/09 09:26:26.421159 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:23: Redis Connect Sucess
+[系统日志]2022/03/09 09:27:12.089921 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:19: Database Connect Sucess
+[系统日志]2022/03/09 09:27:12.182041 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:23: Redis Connect Sucess
+[系统日志]2022/03/09 09:28:09.022766 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:19: Database Connect Sucess
+[系统日志]2022/03/09 09:28:09.322284 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:23: Redis Connect Sucess
+[系统日志]2022/03/09 09:31:40.182526 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:19: Database Connect Sucess
+[系统日志]2022/03/09 09:31:40.389058 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:23: Redis Connect Sucess
+[系统日志]2022/03/09 09:33:35.050783 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:19: Database Connect Sucess
+[系统日志]2022/03/09 09:33:35.358971 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:23: Redis Connect Sucess
+[系统日志]2022/03/09 09:37:41.811632 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:19: Database Connect Sucess
+[系统日志]2022/03/09 09:37:41.886222 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:23: Redis Connect Sucess
+[系统日志]2022/03/09 09:39:43.194541 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:19: Database Connect Sucess
+[系统日志]2022/03/09 09:39:43.442566 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:23: Redis Connect Sucess
+[系统日志]2022/03/09 09:40:40.200780 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:19: Database Connect Sucess
+[系统日志]2022/03/09 09:40:40.355987 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:23: Redis Connect Sucess
+[系统日志]2022/03/09 09:43:20.064021 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:19: Database Connect Sucess
+[系统日志]2022/03/09 09:43:20.141770 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:23: Redis Connect Sucess
+[系统日志]2022/03/09 09:44:00.217280 /Users/huangsn/Projects/golang/LibraryManageSys/main.go:64: Token 鉴权失败
+[系统日志]2022/03/09 09:44:04.424000 /Users/huangsn/Projects/golang/LibraryManageSys/main.go:64: Token 鉴权失败
+[系统日志]2022/03/09 09:44:18.976403 /Users/huangsn/Projects/golang/LibraryManageSys/main.go:64: Token 鉴权失败
+[系统日志]2022/03/09 09:46:02.436772 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:19: Database Connect Sucess
+[系统日志]2022/03/09 09:46:02.547177 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:23: Redis Connect Sucess
+[系统日志]2022/03/09 10:08:28.287327 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:19: Database Connect Sucess
+[系统日志]2022/03/09 10:08:28.375038 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:23: Redis Connect Sucess
+[系统日志]2022/03/09 10:09:39.594638 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:19: Database Connect Sucess
+[系统日志]2022/03/09 10:09:39.690444 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:23: Redis Connect Sucess
+[系统日志]2022/03/09 10:09:56.720218 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:19: Database Connect Sucess
+[系统日志]2022/03/09 10:09:57.077954 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:23: Redis Connect Sucess
+[系统日志]2022/03/09 10:10:54.336390 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/DB.go:19: Database Connect Sucess
+[系统日志]2022/03/09 10:10:54.603307 /Users/huangsn/Projects/golang/LibraryManageSys/pkg/util/Redis.go:23: Redis Connect Sucess
+[系统日志]2022/03/09 10:10:58.760369 /Users/huangsn/Projects/golang/LibraryManageSys/middleware/FileController.go:23: File: <nil>

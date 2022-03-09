@@ -13,3 +13,13 @@ datasource:
   password: Root123.
   charset: utf8
   loc: Asia/Shanghai
+
+# 分页查询
+page:
+  pageSize: 10
+  pageNumber: 1
+
+# file
+file:
+  path: /Users/huangsn/Desktop/images
+  Url: http://1.15.189.106:9050

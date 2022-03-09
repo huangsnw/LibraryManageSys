@@ -28,6 +28,8 @@ func CollectRouter(engine *gin.Engine) *gin.Engine {
 	userGroup.PUT("/update", middleware.UpdateUser)
 	// 导出用户
 	userGroup.GET("/export", middleware.ExportUser)
+	// 用户分页查询
+	userGroup.GET("/page", middleware.PageSelectUser)
 
 	// 图书
 	bookGroup := engine.Group("/book")
@@ -39,6 +41,8 @@ func CollectRouter(engine *gin.Engine) *gin.Engine {
 	bookGroup.DELETE("/del", middleware.DeleteBook)
 	// 修改图书
 	bookGroup.POST("/update", middleware.UpdateBook)
+	// 图书分页查询
+	bookGroup.GET("/page", middleware.PageSelectBook)
 
 	// 文件
 	fileUpload := engine.Group("/file")

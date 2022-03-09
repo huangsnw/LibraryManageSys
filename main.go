@@ -10,12 +10,12 @@ package main
 
 import (
 	"LibraryManageSys/pkg/logs"
+	"LibraryManageSys/pkg/result"
 	"LibraryManageSys/pkg/setting"
 	"LibraryManageSys/pkg/util"
 	"LibraryManageSys/routers"
 	"fmt"
 	"log"
-	"time"
 
 	"github.com/gin-gonic/gin"
 	"github.com/spf13/viper"
@@ -46,22 +46,13 @@ func main() {
 	}
 }
 
-/**
- * @description:
- * @Accept:
- * @param {*gin.Context} ctx
- * @return {*}
- * @Router:
- */
 func TokenHandle(ctx *gin.Context) {
 	tokenString := ctx.Request.Header.Get("X-Token")
 	_, err := util.ParseToken(tokenString)
+	res := result.Result{}
 	if err != nil && ctx.FullPath() != "/token/get" && ctx.FullPath() != "/swagger/*any" {
-		ctx.JSON(500, gin.H{
-			"code":      500,
-			"message":   "鉴权失败",
-			"timestamp": time.Now(),
-		})
+		res.Error("鉴权失败")
+		ctx.JSON(500, res)
 		ctx.Abort()
 		log.Print("Token 鉴权失败")
 		return

@@ -15,4 +15,5 @@ type User struct {
 	Phone   string `json:"phone" gorm:"phone"`
 	Address string `json:"address" gorm:"address"`
 	Rank    int8   `json:"rank" gorm:"rank"`
+	Picture string `json:"picture" gorm:"column:picture;default:null"`
 }

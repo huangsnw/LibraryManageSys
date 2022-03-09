@@ -1,10 +1,3 @@
-/*
- * @title: 处理token
- * @version: 1.0
- * @author: huang sn
- * @description: 这里写描述信息
- * @BasePath: 这里写base path
- */
 package util
 
 import (
@@ -25,11 +18,6 @@ type MyClaims struct {
 	jwt.StandardClaims
 }
 
-/**
- * @description: 获取token
- * @param {string} username
- * @return {string}
- */
 func GetToken(username string) string {
 	// 创建一个我们自己的声明
 	c := MyClaims{
@@ -48,11 +36,6 @@ func GetToken(username string) string {
 	return res
 }
 
-/**
- * @description: 解析token
- * @param {string} tokenString
- * @return {*MyClaims, error}
- */
 func ParseToken(tokenString string) (*MyClaims, error) {
 	// 解析token
 	token, err := jwt.ParseWithClaims(tokenString, &MyClaims{}, func(token *jwt.Token) (i interface{}, err error) {
