@@ -6,9 +6,11 @@ require (
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/gin-gonic/gin v1.7.7
 	github.com/go-redis/redis/v8 v8.11.4
+	github.com/robfig/cron/v3 v3.0.1
 	github.com/spf13/viper v1.10.1
 	github.com/swaggo/gin-swagger v1.4.1
 	github.com/swaggo/swag v1.7.9
+	github.com/xuri/excelize/v2 v2.5.0
 	gorm.io/driver/mysql v1.2.3
 	gorm.io/gorm v1.22.5
 )
@@ -55,7 +57,6 @@ require (
 	github.com/subosito/gotenv v1.2.0 // indirect
 	github.com/ugorji/go/codec v1.2.6 // indirect
 	github.com/xuri/efp v0.0.0-20210322160811-ab561f5b45e3 // indirect
-	github.com/xuri/excelize/v2 v2.5.0 // indirect
 	golang.org/x/crypto v0.0.0-20220214200702-86341886e292 // indirect
 	golang.org/x/net v0.0.0-20220127200216-cd36cc0744dd // indirect
 	golang.org/x/sys v0.0.0-20220209214540-3681064d5158 // indirect
