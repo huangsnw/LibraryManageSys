@@ -8,7 +8,7 @@ import (
 
 func PrintTime() {
 	c := cron.New()
-	c.AddFunc("@every 10s", tsk)
+	c.AddFunc("@every 1h", tsk)
 	c.Start()
 }
 

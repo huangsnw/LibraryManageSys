@@ -6,7 +6,6 @@ import (
 	"LibraryManageSys/pkg/setting"
 	"LibraryManageSys/pkg/util"
 	"LibraryManageSys/routers"
-	"LibraryManageSys/task"
 	"fmt"
 	"log"
 
@@ -23,10 +22,18 @@ func main() {
 	util.InitDB()
 	// 初始化Redis
 	util.InitRedis()
+	// 初始化RabbitMQ
+	// util.InitRabbitMQ()
 	// 定时任务
-	task.PrintTime()
+	// task.PrintTime()
 	// 开启gin
 	engine := gin.Default()
+	// 消息推送
+	// util.SendMessage(util.RabbitChannel, "Hello World1")
+	// 消息接收
+	// util.GetMessage(util.RabbitChannel)
+	// RabbitMQ关闭
+	// util.CloseRabbitMQ()
 	// 拦截器
 	engine.Use(TokenHandle)
 	// 路由

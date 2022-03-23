@@ -7,6 +7,7 @@ import (
 	"LibraryManageSys/pkg/util"
 	"fmt"
 	"log"
+	"net/http"
 	"strconv"
 
 	"github.com/gin-gonic/gin"
@@ -22,13 +23,12 @@ import (
 func SaveBook(ctx *gin.Context) {
 	var book models.Book
 	ctx.ShouldBind(&book)
-	util.DB.AutoMigrate(&models.Book{})
 	util.DB = util.DB.Create(&book)
 	affected := util.DB.RowsAffected
 	fmt.Println("受影响的行：", affected)
 	res := result.Result{}
 	if affected == 1 {
-		ctx.JSON(200, res.OK())
+		ctx.JSON(200, res.SUCESS(&book))
 	} else {
 		ctx.JSON(500, res.ERROR())
 	}
@@ -65,7 +65,18 @@ func SelectBook(ctx *gin.Context) {
 func UpdateBook(ctx *gin.Context) {
 	var book models.Book
 	ctx.BindJSON(&book)
-	util.DB = util.DB.Model(&book).Updates(&book)
+	util.DB = util.DB.Model(&book).Where("deleted = ?", 0).Updates(models.Book{
+		BookName:       book.BookName,
+		Author:         book.Author,
+		Publisher:      book.Publisher,
+		Isbn:           book.Isbn,
+		Classification: book.Classification,
+		Floor:          book.Floor,
+		Bookshelf:      book.Bookshelf,
+		DateOfPurchase: book.DateOfPurchase,
+		Remarks:        book.Remarks,
+		Picture:        book.Picture,
+	})
 	res := result.Result{}
 	if util.DB.RowsAffected == 1 {
 		ctx.JSON(200, res.OK())
@@ -115,4 +126,11 @@ func PageSelectBook(ctx *gin.Context) {
 	}
 	page2.OK(page1, numb, int(sum), &book)
 	ctx.JSON(200, page2)
+}
+
+func SelectAllBook(ctx *gin.Context) {
+	var book []models.Book
+	util.DB.Raw("select * from books where id is not null").Scan(&book)
+	res := result.Result{}
+	ctx.JSON(http.StatusOK, res.SUCESS(&book))
 }

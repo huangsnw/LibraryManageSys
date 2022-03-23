@@ -9,7 +9,7 @@ type Result struct {
 	Message   string      `json:"message"`
 	Code      int         `json:"code"`
 	Result    interface{} `json:"result"`
-	Timestamp time.Time   `json:"timestamp"`
+	Timestamp int64       `json:"timestamp"`
 }
 
 func (res *Result) OK() Result {
@@ -17,7 +17,7 @@ func (res *Result) OK() Result {
 	res.Message = "操作成功"
 	res.Code = 200
 	res.Result = nil
-	res.Timestamp = time.Now()
+	res.Timestamp = time.Now().Unix()
 	return *res
 }
 
@@ -26,7 +26,7 @@ func (res *Result) Ok(message string) Result {
 	res.Message = message
 	res.Code = 200
 	res.Result = nil
-	res.Timestamp = time.Now()
+	res.Timestamp = time.Now().Unix()
 	return *res
 }
 
@@ -35,7 +35,7 @@ func (res *Result) SUCESS(param interface{}) Result {
 	res.Message = "操作成功"
 	res.Code = 200
 	res.Result = param
-	res.Timestamp = time.Now()
+	res.Timestamp = time.Now().Unix()
 	return *res
 }
 
@@ -44,7 +44,7 @@ func (res *Result) ERROR() Result {
 	res.Message = "操作失败"
 	res.Code = 500
 	res.Result = nil
-	res.Timestamp = time.Now()
+	res.Timestamp = time.Now().Unix()
 	return *res
 }
 
@@ -53,7 +53,7 @@ func (res *Result) Error(message string) Result {
 	res.Message = message
 	res.Code = 500
 	res.Result = nil
-	res.Timestamp = time.Now()
+	res.Timestamp = time.Now().Unix()
 	return *res
 }
 
@@ -62,6 +62,6 @@ func (res *Result) Fail(param interface{}) Result {
 	res.Message = "操作失败"
 	res.Code = 500
 	res.Result = param
-	res.Timestamp = time.Now()
+	res.Timestamp = time.Now().Unix()
 	return *res
 }

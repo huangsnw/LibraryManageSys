@@ -43,6 +43,8 @@ func CollectRouter(engine *gin.Engine) *gin.Engine {
 	bookGroup.POST("/update", middleware.UpdateBook)
 	// 图书分页查询
 	bookGroup.GET("/page", middleware.PageSelectBook)
+	// 查询全部图书
+	bookGroup.GET("/all", middleware.SelectAllBook)
 
 	// 文件
 	fileUpload := engine.Group("/file")
@@ -55,6 +57,14 @@ func CollectRouter(engine *gin.Engine) *gin.Engine {
 	token := engine.Group("/token")
 	// 拿到token
 	token.GET("/get", middleware.GetToken)
+
+	// 测试
+	ginTest := engine.Group("/test")
+	ginTest.GET("/one", middleware.TestASCII)
+
+	// 随机图片API
+	randomImages := engine.Group("/getImage")
+	randomImages.GET("/api", middleware.Get)
 
 	// 返回值
 	return engine

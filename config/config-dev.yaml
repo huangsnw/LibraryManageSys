@@ -1,7 +1,7 @@
 # 服务
 server:
   host: localhost
-  port: 8080
+  port: 8081
 
 # mysql
 datasource:
@@ -22,6 +22,16 @@ redis:
   db: 0
   poolSize: 100
 
+# rabbitmq
+rabbitmq:
+  host: 1.15.189.106
+  port: 5672
+  username: admin
+  password: admin
+  virtual-host: /
+
+
+
 # 分页查询
 page:
   pageSize: 10
@@ -31,3 +41,4 @@ page:
 file:
   path: /Users/huangsn/Desktop/images
   Url: http://1.15.189.106:9050
+  library: http://1.15.189.106:9050/imageLibrary

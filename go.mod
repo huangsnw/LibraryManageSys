@@ -6,8 +6,10 @@ require (
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/gin-gonic/gin v1.7.7
 	github.com/go-redis/redis/v8 v8.11.4
+	github.com/google/uuid v1.3.0
 	github.com/robfig/cron/v3 v3.0.1
 	github.com/spf13/viper v1.10.1
+	github.com/streadway/amqp v1.0.0
 	github.com/swaggo/gin-swagger v1.4.1
 	github.com/swaggo/swag v1.7.9
 	github.com/xuri/excelize/v2 v2.5.0

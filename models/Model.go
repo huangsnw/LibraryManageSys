@@ -1,11 +1,16 @@
 package models
 
-import "time"
+import (
+	"time"
+
+	"github.com/google/uuid"
+)
 
 type Model struct {
-	ID       string    `json:"id" gorm:"primaryKey" type:"uuid"`
-	CreateAt time.Time `json:"create_at" gorm:"type:datetime;default:null"`
-	UpdateAt time.Time `json:"update_at" gorm:"type:datetime;default:null"`
-	CreateBy string    `json:"create_by" gorm:"type:varchar(32);default:null"`
-	UpdateBy string    `json:"update_by" gorm:"type:varchar(32);default:null"`
+	ID        uuid.UUID `json:"id" gorm:"primaryKey;type:varchar(36)"`
+	CreatedAt time.Time `json:"created_at"`
+	UpdatedAt time.Time `json:"updated_at"`
+	CreatedBy string    `json:"created_by" gorm:"type:varchar(32)"`
+	UpdatedBy string    `json:"updated_by" gorm:"type:varchar(32)"`
+	Deleted   int8      `json:"deleted" gorm:"default:0"`
 }

@@ -11,7 +11,7 @@ import (
 var MySecret = []byte("夏天夏天悄悄过去")
 
 // token过期时间
-const TokenExpireDuration = time.Hour * 24
+const TokenExpireDuration = time.Hour * 72
 
 type MyClaims struct {
 	Username string `json:"username"`
