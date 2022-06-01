@@ -39,6 +39,6 @@ page:
 
 # file
 file:
-  path: /Users/huangsn/Desktop/images
-  Url: http://1.15.189.106:9050
-  library: http://1.15.189.106:9050/imageLibrary
+  path: 
+  Url: 
+  library: 
