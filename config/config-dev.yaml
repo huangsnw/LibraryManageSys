@@ -6,11 +6,11 @@ server:
 # mysql
 datasource:
   driverName: mysql
-  host: 1.15.189.106
+  host: *
   port: 3306
   database: library
   username: root
-  password: Root123.
+  password: 123456
   charset: utf8
   loc: Asia/Shanghai
 
@@ -24,7 +24,7 @@ redis:
 
 # rabbitmq
 rabbitmq:
-  host: 1.15.189.106
+  host: *
   port: 5672
   username: admin
   password: admin
